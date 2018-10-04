@@ -39,7 +39,7 @@ end
 def inf6000
 @bitcoin_sort2 = @bitcoin_sort.delete_if{|key,val| (val.delete "$").to_f>=6000 }
 puts @bitcoin_sort2
-puts "\nLe cours le plus haut :\n#{@bitcoin_sort2.last}"
+puts "\nLe cours le plus haut pour les < 6000 :\n#{@bitcoin_sort2.last}"
 end
 end
 
